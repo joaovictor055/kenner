@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="https://d1fdloi71mui9q.cloudfront.net/oyHwGDsSXQYyM2UIb64Q_l4V5SiWsgCMVER03" alt="Ícone">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="content">
+      <img src="./imgKenner/l7Kenner.webp" alt="">
+        <h1>Bem-vindo ao Meu Site</h1>
+        <h3>De 1 a 5 como você avalia o impacto das iniativas de sustentabilidade da coleção L7 no meio ambiente?</h3>
+        <div class="rating">
+         <input type="radio" id="star5" name="rating" value="5">
+         <label for="star5"></label>
+         <input type="radio" id="star4" name="rating" value="4">
+         <label for="star4"></label>
+         <input type="radio" id="star3" name="rating" value="3">
+         <label for="star3"></label>
+         <input type="radio" id="star2" name="rating" value="2">
+         <label for="star2"></label>
+         <input type="radio" id="star1" name="rating" value="1">
+         <label for="star1"></label>
+         
+         
+       </div>
+       
+    </div>
+          <div class="content">
+            <a href="https://pay.iexperience.com.br/c705dab5" class="link-botao">
+               RESGATE
+             </a>
+          </div>  
+
+          <div class="carousel-container">
+             <img src="./imgKenner/logo2.png" alt="logo">
+            <div class="carousel">
+              <img src="./imgKenner/haka.webp" alt="Imagem 1">
+              <img src="./imgKenner/kenner2.webp" alt="Imagem 2">
+              <img src="./imgKenner/kenner3.webp" alt="Imagem 3">
+              <img src="./imgKenner/kenner4.PNG" alt="Imagem 4">
+              
+            </div>
+            <button class="nav-btn " onclick="prevSlide()">&#10094;</button>
+            <button class="nav-btn" onclick="nextSlide()">&#10095;</button>
+            
+          </div>
+          
+          <script>
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.carousel img');
+            const totalSlides = slides.length;
+          
+            function showSlide(index) {
+              if (index < 0) {
+                currentIndex = totalSlides - 1;
+              } else if (index >= totalSlides) {
+                currentIndex = 0;
+              } else {
+                currentIndex = index;
+              }
+          
+              const offset = currentIndex * -100;
+              document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+            }
+          
+            function prevSlide() {
+              showSlide(currentIndex - 1);
+            }
+          
+            function nextSlide() {
+              showSlide(currentIndex + 1);
+            }
+          
+            // Inicialmente, mostramos o primeiro slide
+            showSlide(0);
+          </script>
+
+
+  </body>       
+          
+</html>
+
+<style> 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link-botao {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Content Styles */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    width: 50px; /* Defina o tamanho do botão aqui */
+    height: 50px; /* Defina o tamanho do botão aqui */
+    border-radius: 50%; /* Isso cria um botão redondo */
+    background-color: #e4b312; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto dentro do botão */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; /* Espaçamento entre os botões */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra a mão ao passar o mouse */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove a aparência do foco */
+  }
+
+  
+
+  /* Efeito de hover */
+  .comprar-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Efeito de foco */
+  .comprar-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+
+  /* Estilos para o carrossel */
+  .carousel-container {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Estilos para os botões de navegação */
+  .nav-btn {
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+  }
+
+  .rating > input {
+    display: none;
+  }
+
+  .rating > label {
+    display: inline-block;
+    padding: 5px;
+    font-size: 60px;
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .rating > label:before {
+    content: '★';
+  }
+
+  .rating > input:checked ~ label,
+  .rating > input:checked ~ label ~ label {
+    color: #f7d411;
+  }
+
+  .rating > input:not(:checked) ~ label:hover,
+  .rating > input:not(:checked) ~ label:hover ~ label {
+    color: #f7d411;
+  }
+
+  
+
+</style
