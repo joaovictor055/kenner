@@ -23,7 +23,7 @@
     
 
     <div class="content">
-      <img src="./imgKenner/l7Kenner.webp" alt="">
+      <img src="./imgKenner/kenner-vernelha.PNG" alt="">
       
         <h3>De 1 a 5 como você avalia o impacto das iniativas de sustentabilidade da coleção L7 no meio ambiente?</h3>
         <div class="rating">
@@ -87,10 +87,22 @@
              });
            });
          </script>   
+        
+
 
           <div class="content">
-            <a href="./pag2.html" class="link-botao">AVALIE</a>
+            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+
+            <a href="https://pay.iexperience.com.br/1914e466" class="link-botao">RESGATAR</a>
+           
           </div>  
+
+          <script>
+            function goBack() {
+                window.history.back(); // Volta para a página anterior no histórico de navegação
+            }
+        </script>
+       
      </div>
               
 
@@ -103,6 +115,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.back-btn {
+    background-color: #434ef0; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto dentro do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Arredonda as bordas */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.back-btn:hover {
+    background-color: #0056b3; /* Mudança de cor de fundo ao passar o mouse */
 }
 .content{
   background: rgb(255, 255, 250);
@@ -278,11 +303,11 @@
   }
 
   .content img {
-    width: 600px; /* Set width */
+    width: 550px; /* Set width */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 5px;
   }
 
   
 
-</style
+</style>
