@@ -14,9 +14,10 @@
                 <img src="https://d1fdloi71mui9q.cloudfront.net/oyHwGDsSXQYyM2UIb64Q_l4V5SiWsgCMVER03" alt="Ícone">
             </div>
             <ul class="navbar-menu">
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+              <ul class="navbar-menu">
+                <img src="./imgKenner/lanchonete.png" alt="">
+                  
+              </ul>
             </ul>
         </div>
     </nav>
@@ -90,6 +91,14 @@
 
           <div class="content">
             <a href="./pag3.html" class="link-botao">AVALIE</a>
+            <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Voltar</button>
+
+            <script>
+                function goBack() {
+                    window.history.back(); // Volta para a página anterior no histórico de navegação
+                }
+            </script>
+            
           </div>  
      </div>
               
@@ -104,11 +113,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-.content{
-  background: rgb(255, 255, 250);
-    background: linear-gradient(90deg, rgba(161, 161, 161, 0.658) 40%, rgba(243, 228, 220, 1) 100%);
-    border-radius: 15px;
+
+
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #b39283;
+        }
+
+.back-btn {
+            background-color: #ffffff00;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
 }
+.content{
+        background: rgb(255, 255, 250);
+            background: linear-gradient(90deg, rgba(161, 161, 161, 0.658) 40%, rgba(243, 228, 220, 1) 100%);
+            border-radius: 15px;
+        }
 
 .h3{
   padding-top: 10px;

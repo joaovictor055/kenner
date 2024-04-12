@@ -14,9 +14,10 @@
                 <img src="https://d1fdloi71mui9q.cloudfront.net/oyHwGDsSXQYyM2UIb64Q_l4V5SiWsgCMVER03" alt="Ícone">
             </div>
             <ul class="navbar-menu">
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+              <ul class="navbar-menu">
+                <img src="./imgKenner/lanchonete.png" alt="">
+                  
+              </ul>
             </ul>
         </div>
     </nav>
@@ -91,18 +92,21 @@
 
 
           <div class="content">
-            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+            <a href="./pagResg.html" class="link-botao">AVALIE</a>
 
-            <a href="https://pay.iexperience.com.br/1914e466" class="link-botao">RESGATAR</a>
+            <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Voltar</button>
+
+            <script>
+                function goBack() {
+                    window.history.back(); // Volta para a página anterior no histórico de navegação
+                }
+            </script>
+            
            
           </div>  
 
-          <script>
-            function goBack() {
-                window.history.back(); // Volta para a página anterior no histórico de navegação
-            }
-        </script>
-       
+          
+              
      </div>
               
 
@@ -116,24 +120,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #b39283;
+        }
+
 .back-btn {
-    background-color: #434ef0; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto dentro do botão */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Arredonda as bordas */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
-    font-size: 16px; /* Tamanho da fonte */
+            background-color: #ffffff00;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
 }
+
 
 .back-btn:hover {
     background-color: #0056b3; /* Mudança de cor de fundo ao passar o mouse */
 }
 .content{
-  background: rgb(255, 255, 250);
-    background: linear-gradient(90deg, rgba(161, 161, 161, 0.658) 40%, rgba(243, 228, 220, 1) 100%);
-    border-radius: 15px;
-}
+        background: rgb(255, 255, 250);
+            background: linear-gradient(90deg, rgba(161, 161, 161, 0.658) 40%, rgba(243, 228, 220, 1) 100%);
+            border-radius: 15px;
+        }
 
 .h3{
   padding-top: 10px;

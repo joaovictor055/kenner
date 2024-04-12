@@ -14,9 +14,8 @@
                 <img src="https://d1fdloi71mui9q.cloudfront.net/oyHwGDsSXQYyM2UIb64Q_l4V5SiWsgCMVER03" alt="Ícone">
             </div>
             <ul class="navbar-menu">
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+              <img src="./imgKenner/lanchonete.png" alt="">
+                
             </ul>
         </div>
     </nav>
@@ -89,6 +88,13 @@
          </script>   
 
           <div class="content">
+            <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Voltar</button>
+
+            <script>
+                function goBack() {
+                    window.history.back(); // Volta para a página anterior no histórico de navegação
+                }
+            </script>
             <a href="./pag2.html" class="link-botao">AVALIE</a>
           </div>  
      </div>
@@ -103,6 +109,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #b39283;
+        }
+
+.back-btn {
+            background-color: #ffffff00;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
 }
 .content{
   background: rgb(255, 255, 250);
