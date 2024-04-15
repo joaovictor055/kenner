@@ -26,7 +26,7 @@
     <div class="content">
       <img src="./imgKenner/kenner-branca.PNG" alt="">
       
-        <h3>De 1 a 5 como você avalia o impacto das iniativas de sustentabilidade da coleção L7 no meio ambiente?</h3>
+        <h3>Em uma escala de 1 a 5, quão inovador você considera o design da coleção L7?</h3>
         <div class="rating">
          <input type="radio" id="star5" name="rating" value="5">
          <label for="star5"></label>
@@ -41,22 +41,22 @@
        </div>
 
        <div>
-        <h3>Para você, qua é a importância de comprar produtos de marcas sustaentáveis como kenner?</h3>
+        <h3>De onde você acha que a coleção L7 tira suas principais influências de design?</h3>
        </div>
 
-          <div><a href="#" class="button" id="button1">Button 1</a>
+          <div><a href="#" class="button" id="button1">Arte urbana</a>
             
-            <!-- Button 2 -->
-            <a href="#" class="button" id="button2">Button 2</a>
+        
+            <a href="#" class="button" id="button2">Moda retrô</a>
 
             <script>
-              // JavaScript code to toggle button state
+              
               document.addEventListener('DOMContentLoaded', function() {
-                // Get buttons
+              
                 var button1 = document.getElementById('button1');
                 var button2 = document.getElementById('button2');
 
-                // Toggle button state when clicked
+               
                 button1.addEventListener('click', function() {
                   button1.classList.toggle('marked');
                 });
@@ -68,13 +68,13 @@
            </script>
          </div>
 
-         <h3 class="h3">Qual a iniativa sustentável da kenner L7 você mais valoriza?</h3>
+         <h3 class="h3">Qual elemento de design da coleção L7 você mais aprecia?</h3>
 
-         <a href="#" class="toggle-button" id="toggleButton1">Button 1</a>
-         <a href="#" class="toggle-button" id="toggleButton2">Button 2</a>
+         <a href="#" class="toggle-button" id="toggleButton1">Inovações no conforto</a>
+         <a href="#" class="toggle-button" id="toggleButton2">Paderões e texturas</a>
        
          <script>
-           // JavaScript code to handle button clicks
+      
            document.addEventListener('DOMContentLoaded', function() {
              var toggleButton1 = document.getElementById('toggleButton1');
              var toggleButton2 = document.getElementById('toggleButton2');
@@ -90,12 +90,12 @@
          </script>   
 
           <div class="content">
-            <a href="./pag3.html" class="link-botao">AVALIE</a>
+            <a href="./pag3.html" class="link-botao">Enviar avaliação</a>
             <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Voltar</button>
 
             <script>
                 function goBack() {
-                    window.history.back(); // Volta para a página anterior no histórico de navegação
+                    window.history.back(); 
                 }
             </script>
             
@@ -193,7 +193,7 @@ body {
     text-decoration: none;
 }
 
-/* Content Styles */
+
 .content {
   
     max-width: 890px;
@@ -207,22 +207,21 @@ body {
 }
 
 .botao {
-    width: 50px; /* Defina o tamanho do botão aqui */
-    height: 50px; /* Defina o tamanho do botão aqui */
-    border-radius: 50%; /* Isso cria um botão redondo */
-    background-color: #e4b312; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto dentro do botão */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: #e4b312; 
+    color: #fff; 
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 5px; /* Espaçamento entre os botões */
-    font-size: 20px; /* Tamanho da fonte */
-    cursor: pointer; /* Mostra a mão ao passar o mouse */
-    border: none; /* Remove a borda */
-    outline: none; /* Remove a aparência do foco */
+    margin: 5px; 
+    cursor: pointer;  
+    border: none; 
+    outline: none; 
   }
 
-  /* Estilos para os botões de navegação */
+
   .nav-btn {
     cursor: pointer;
     background-color: #000000;
@@ -277,12 +276,12 @@ body {
     color: rgb(0, 0, 0);
     text-decoration: none;
     border: none;
-    border-radius: 10px; /* Adjust the value to control the roundness */
+    border-radius: 10px; 
     margin-top: 10px;
     cursor: pointer;
   }
 
-  /* Style for marked button */
+  
   .button.marked {
     background-color: rgb(87, 87, 87);
   }
@@ -295,19 +294,19 @@ body {
     color: rgb(0, 0, 0);
     text-decoration: none;
     border: none;
-    border-radius: 10px; /* Adjust the value to control the roundness */
+    border-radius: 10px; 
     cursor: pointer;
   }
 
-  /* Style for selected button */
+
   .toggle-button.selected {
     background-color: rgb(87, 87, 87);
     color: white;
   }
 
   .content img {
-    width: 550px; /* Set width */
-    height: auto; /* Maintain aspect ratio */
+    width: 550px; 
+    height: auto; 
     margin-bottom: 5px;
   }
 
